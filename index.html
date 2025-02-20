@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrayJays Driving School</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,17 +19,18 @@
                     <i class="fas fa-map-marker-alt"></i>
                     <span>33 Zenith Dr Scarborough, ON M1K 1K6, Canada</span>
                 </div>
-                <div>
+                <a href="tel:+16475377006">
                     <i class="fas fa-phone"></i>
                     <span>(647)-537-7006</span>
-                </div>
+                </a>
+
             </div>
             <div class="social-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
             </div>
 
         </div>
@@ -108,14 +111,16 @@
      justify-content: center;
      align-items: center;
      margin: 0; flex-direction: column;">
-        <div class="container" style="justify-content: center; align-items: center;">
+        <div class="container" style="justify-content: center; padding-left: 20px; padding-right: 20px;">
             <!-- Statistics -->
-            <div
-                style="border-radius: 40px; background-color: #FFF5F0; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600; margin-top: 80px;">
-                Statistics
+            <div style="display: flex; justify-content: center;">
+                <div
+                    style="border-radius: 40px; background-color: #FFF5F0; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600; margin-top: 80px;">
+                    Statistics
+                </div>
             </div>
             <h1 class="statisticsTitle"><span style="color: #C7A125;">Milestones</span> Of This Year</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; margin-top: 41px;">
+            <div class="statisticContainer">
                 <div class="statisticsCard">
                     <img src="./images/milestone1.png" alt="Milestones">
                     <h1>29,700+</h1>
@@ -138,12 +143,14 @@
                 </div>
             </div>
             <!-- Process -->
-            <div
-                style="border-radius: 40px; background-color: #FFF5F0; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600;margin-top: 104px;">
-                Process
+            <div style="display: flex; justify-content: center;">
+                <div
+                    style="border-radius: 40px; background-color: #FFF5F0; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600;margin-top: 104px;">
+                    Process
+                </div>
             </div>
             <h1 class="statisticsTitle"> Path To Driving <span style="color: #C7A125;">Success</span></h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 80px; justify-content: center; margin-top: 41px; ">
+            <div class="statisticContainer">
                 <div class="processCard">
                     <img src="./images/success1.png" alt="Success">
                     <h2>Enrollment</h2>
@@ -165,7 +172,12 @@
                     <p>Easy enrollment process, register now for driving courses.</p>
                 </div>
             </div>
-            <div class="containerEnroll" style="margin-top: 60px;">
+
+        </div>
+    </div>
+    <div class="drivingBG">
+        <div class="container" style="justify-content: center; align-items: center;">
+            <div class="containerEnroll" style="margin-bottom: 60px;">
                 <div class="line"></div>
                 <div class="content">
                     Begin Your Journey With Online Enrollment. >
@@ -173,10 +185,6 @@
                 </div>
                 <div class="line"></div>
             </div>
-        </div>
-    </div>
-    <div class="drivingBG">
-        <div class="container" style="justify-content: center; align-items: center;">
             <div class="packagesAlign">
                 <div
                     style="border-radius: 40px; background-color: #FFFFFF; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600; ">
@@ -247,14 +255,8 @@
             </div>
         </div>
 
-    </div>
-    <!-- Our Services -->
-    <div style="display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0; flex-direction: column;">
         <div class="serviceContainer"
-            style=" max-width: 1440px;width: 100%; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;text-align: center;margin-bottom: 30px;">
+            style=" max-width: 1400px;width: 100%; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;text-align: center;margin-bottom: 30px;">
             <div
                 style="border-radius: 40px; background-color: #FFFFFF; color: #C7A125; width: fit-content; padding: 15px 20px; font-size: 16px; font-weight: 600; ">
                 Our Services
@@ -296,8 +298,8 @@
                 </div>
             </div>
         </div>
-        <button class="nav-button prev">‹</button>
-        <button class="nav-button next">›</button>
+        <button class="nav-button prev"><i class="fa fa-chevron-left"></i></button>
+        <button class="nav-button next"><i class="fa fa-chevron-right"></i></button>
     </div>
     <div style="display: flex;
     justify-content: center;
@@ -306,9 +308,9 @@
         <div class="ourContainer">
             <div
                 style="display: flex; flex-direction: column; width: 100%; justify-content: flex-start; margin-top: 50px;">
-               <div class="packagesAlign">
-                <div class="services-tag">Our Services</div>
-               </div>
+                <div class="packagesAlign">
+                    <div class="services-tag">Our Services</div>
+                </div>
                 <h1 class="ourTitle">
                     Why Training With GrayJays <br> Driving School?
                 </h1>
@@ -385,7 +387,7 @@
         <div
             style="display: flex; flex-direction: column; width: 100%; max-width: 1400px; justify-content: center; align-items: center; ">
             <div class="services-tag">Testimonial</div>
-            <h1 class="ourTitle" style="padding: 30px; color: #273D66;">
+            <h1 class="ourTitle" style=" color: #273D66;">
                 What Our <span style="color: #C7A125;">Student Says</span>
             </h1>
         </div>
@@ -536,25 +538,34 @@
 
     </div>
     <div style="display: flex;
-justify-content: center;
-align-items: center;
-margin: 0; flex-direction: column; margin-top: 67px; background: #0C142E;">
+    justify-content: center;
+    align-items: center;
+    margin: 0; flex-direction: column; margin-top: 67px; background: #111A36;">
         <footer class="footer">
             <div class="footer-top">
-                <div class="logo">
+                <div class="logo1">
                     <img src="./images/logo2.png" alt="GrayJays Logo">
                 </div>
+                <div class="divider"></div>
                 <div class="newsletter">
                     <p>Subscribe Our Newsletter For Latest Updates</p>
-                    <div class="subscribe-box">
-                        <input type="email" placeholder="Enter Email Address">
-                        <button>&#10132;</button>
-                    </div>
+                </div>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter Email Address">
+                    <button>&#10132;</button>
                 </div>
             </div>
+            
+        </footer>
+    </div>
 
-            <div class="footer-bottom">
-                <div class="footer-column">
+    <div style="display: flex;
+justify-content: center;
+align-items: center;
+margin: 0; flex-direction: column; background: #0C142E;">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#">Toronto Municipal Licensing & Standards</a></li>
@@ -562,10 +573,11 @@ margin: 0; flex-direction: column; margin-top: 67px; background: #0C142E;">
                         <li><a href="#">Find Us at Government-Approved Driving Schools</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+
+                <div class="footer-section">
                     <h3>Who We Are</h3>
                     <ul>
-                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Terms of Service</a></li>
@@ -575,7 +587,8 @@ margin: 0; flex-direction: column; margin-top: 67px; background: #0C142E;">
                         <li><a href="#">Login</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+
+                <div class="footer-section">
                     <h3>What We Do</h3>
                     <ul>
                         <li><a href="#">How To Get A License</a></li>
@@ -588,48 +601,52 @@ margin: 0; flex-direction: column; margin-top: 67px; background: #0C142E;">
                         <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+
+                <div class="footer-section">
                     <h3>Why We Exist</h3>
-                    <p>Empowering individuals with lifelong safe driving skills to eliminate car crashes, one confident
-                        driver at a time, fostering a future where roads are accident-free.</p>
+                    <ul>
+                        <li><a href="#">Empowering Individuals with lifelong safe driving skills to eliminate car
+                                crashes, one confident driver at a time, fostering a future where roads are
+                                accident-free.</a></li>
+                    </ul>
                 </div>
-                <div class="footer-column">
+
+                <div class="footer-section">
                     <h3>Cities Where We Operate</h3>
                     <div class="city-grid">
                         <ul>
-                            <li>Toronto</li>
-                            <li>Scarborough</li>
-                            <li>East York</li>
-                            <li>North York</li>
-                            <li>Markham</li>
-                            <li>Port Union</li>
-                            <li>Pickering</li>
-                            <li>Ajax</li>
-                            <li>Whitby</li>
-                            <li>Oshawa</li>
-                            <li>Peterborough</li>
-                            <li>Lindsay</li>
-                            <li>Courtice</li>
+                            <li><a href="#">Toronto</a></li>
+                            <li><a href="#">Scarborough</a></li>
+                            <li><a href="#">East York</a></li>
+                            <li><a href="#">North York</a></li>
+                            <li><a href="#">Markham</a></li>
+                            <li><a href="#">Port Union</a></li>
+                            <li><a href="#">Pickering</a></li>
+                            <li><a href="#">Ajax</a></li>
+                            <li><a href="#">Whitby</a></li>
+                            <li><a href="#">Oshawa</a></li>
+                            <li><a href="#">Peterborough</a></li>
+                            <li><a href="#">Lindsay</a></li>
+                            <li><a href="#">Courtice</a></li>
                         </ul>
                         <ul>
-                            <li>Bowmanville</li>
-                            <li>Clarington</li>
-                            <li>Newcastle</li>
-                            <li>Port Perry</li>
-                            <li>Richmond Hill</li>
-                            <li>St. Catherine</li>
-                            <li>Georgina</li>
-                            <li>Newmarket</li>
-                            <li>Milton</li>
-                            <li>Kitchener</li>
-                            <li>Oakville</li>
-                            <li>Burlington</li>
-                            <li>Hamilton</li>
+                            <li><a href="#">Bowmanville</a></li>
+                            <li><a href="#">Clarington</a></li>
+                            <li><a href="#">Newcastle</a></li>
+                            <li><a href="#">Port Perry</a></li>
+                            <li><a href="#">Richmond Hill</a></li>
+                            <li><a href="#">St. Catherine</a></li>
+                            <li><a href="#">Georgina</a></li>
+                            <li><a href="#">Newmarket</a></li>
+                            <li><a href="#">Milton</a></li>
+                            <li><a href="#">Kitchener</a></li>
+                            <li><a href="#">Oakville</a></li>
+                            <li><a href="#">Burlington</a></li>
+                            <li><a href="#">Hamilton</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom-text">
                 <p>Copyright © 2025 GrayJays Driving School</p>
             </div>
