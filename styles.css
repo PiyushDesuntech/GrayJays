@@ -597,9 +597,17 @@ nav {
 .view-all {
     background-color: #273D66;
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #273D66;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
     text-decoration: none;
+}
+.view-all:hover {
+    background-color: white;
+    color: #273D66;
+    border: 2px solid #273D66;
 }
 
 .packages-container {
