@@ -416,6 +416,10 @@ nav {
 
 /* Statistics */
 
+.statisticsHeader {
+    margin-top: 80px;
+}
+
 .statisticsTitle {
     font-family: 'Lato', sans-serif;
     font-size: 60px;
@@ -557,7 +561,7 @@ nav {
 @media (max-width: 900px) {
     .statisticsTitle {
         font-family: 'Lato', sans-serif;
-        font-size: 40px;
+        font-size: 27px;
         font-weight: 500;
     }
 
@@ -589,11 +593,15 @@ nav {
 }
 
 @media (max-width: 899px) {
+
     .statisticContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-content: center;
+    }
+    .statisticsHeader {
+        margin-top: 20px;
     }
 }
 
@@ -603,8 +611,8 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
-}
-
+    
+    }
 
 .header {
     display: flex;
@@ -1044,6 +1052,12 @@ nav {
     min-width: calc((100% - 40px) / 3);
     flex: 0 0 calc((100% - 40px) / 3);
     text-align: center;
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .slide-content {
@@ -1068,6 +1082,9 @@ nav {
     font-family: 'Lato', sans-serif;
     font-size: 28px;
     font-weight: 600;
+}
+.slide h3:hover {
+    color: #D1B000;
 }
 
 .nav-button {
@@ -1289,7 +1306,7 @@ nav {
 @media (max-width: 768px) {
     .ourTitle {
         font-family: 'Lato', sans-serif;
-        font-size: 20px;
+        font-size: 27px;
         text-align: center;
         margin-bottom: 0px;
     }
@@ -1345,6 +1362,7 @@ nav {
     position: relative;
     overflow: hidden;
     padding: 0 40px;
+    margin-top: 60px;
 }
 
 .slider1 {
@@ -1352,6 +1370,7 @@ nav {
     transition: transform 0.5s ease-in-out;
     gap: 80px;
     /* justify-content: flex-start; */
+    padding-top: 10px;
 }
 
 .slide1 {
@@ -1362,7 +1381,13 @@ nav {
     border-radius: 24.14px;
     padding: 29px;
     max-width: 378px;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
 }
+.slide1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 
 .slide-content1 {
     display: flex;
@@ -1464,11 +1489,13 @@ nav {
 @media (max-width: 768px) {
     .slider-container1 {
         padding: 0 20px;
+        margin-top: 20px;
     }
 
     .slide1 {
         min-width: 100%;
         flex: 0 0 100%;
+        padding: 10px;
     }
 
     .slider1 {
@@ -1484,6 +1511,9 @@ nav {
         font-family: 'Lato', sans-serif;
         font-size: 30px;
         font-weight: 500;
+    }
+    .studentDescription {
+        line-height: 20px;
     }
 
     .nav-button1 {
@@ -2030,3 +2060,106 @@ nav {
         width: auto;
     }
 }
+
+.milestone-container {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .milestone-text {
+    display: inline-block;
+    position: relative;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .milestone-text .first-part {
+    color: #C7A125;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .milestone-text .second-part {
+    color: #1B365D;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: -15px; 
+    left: -20px;
+    width: calc(100% + 0px);
+    height: 30px; 
+    overflow: visible;
+  }
+  
+  .curved-line {
+    fill: none;
+    stroke: #C7A125;
+    stroke-width: 2.5px;
+  }
+
+  @media (max-width: 768px) {
+    .milestone-container {
+        padding: 0px;
+    }
+    .milestone-text {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      .underline {
+        display: none;
+      }
+  }
+.milestone1-container {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+  }
+  
+  .milestone1-text {
+    display: inline-block;
+    position: relative;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .milestone1-text .first-part {
+    color: #FFF;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .milestone1-text .second-part {
+    color: #1B365D;
+  }
+  
+  .underline1 {
+    position: absolute;
+    bottom: -15px; 
+    left: -20px;
+    width: calc(100% + 0px);
+    height: 30px; 
+    overflow: visible;
+  }
+  
+  .curved-line1 {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2.5px;
+  }
+
+  @media (max-width: 768px) {
+    .milestone1-container {
+        padding: 0px;
+        text-align: center;
+    }
+    .milestone1-text {
+        font-size: 22px;
+        margin-bottom: 0px;
+      }
+      .underline1 {
+        display: none;
+      }
+  }
